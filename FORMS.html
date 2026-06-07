@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Master Registration Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter email">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password">
+        <br><br>
+
+        <label>Phone:</label>
+        <input type="tel">
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" min="1" max="100">
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date">
+        <br><br>
+
+        <label>Birth Time:</label>
+        <input type="time">
+        <br><br>
+
+        <label>Website:</label>
+        <input type="url">
+        <br><br>
+
+        <label>Search:</label>
+        <input type="search">
+        <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Gender</legend>
+
+        <input type="radio" name="gender" value="male">
+        <label>Male</label>
+
+        <input type="radio" name="gender" value="female">
+        <label>Female</label>
+
+        <input type="radio" name="gender" value="other">
+        <label>Other</label>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Skills</legend>
+
+        <input type="checkbox"> HTML
+        <br>
+
+        <input type="checkbox"> CSS
+        <br>
+
+        <input type="checkbox"> JavaScript
+        <br>
+
+        <input type="checkbox"> React
+        <br>
+
+        <input type="checkbox"> Node.js
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Location</legend>
+
+        <label>City:</label>
+
+        <input list="cities">
+
+        <datalist id="cities">
+            <option value="Delhi">
+            <option value="Mumbai">
+            <option value="Pune">
+            <option value="Bangalore">
+        </datalist>
+
+        <br><br>
+
+        <label>State:</label>
+
+        <select>
+
+            <optgroup label="North India">
+                <option>Delhi</option>
+                <option>Haryana</option>
+                <option>Punjab</option>
+            </optgroup>
+
+            <optgroup label="South India">
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+            </optgroup>
+
+        </select>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Uploads</legend>
+
+        Upload Photo:
+        <input type="file">
+        <br><br>
+
+        Upload Resume:
+        <input type="file">
+        <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Preferences</legend>
+
+        Favorite Color:
+        <input type="color">
+        <br><br>
+
+        Satisfaction Level:
+        <input type="range" min="0" max="100">
+        <br><br>
+
+        Hidden ID:
+        <input type="hidden" value="101">
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Additional Information</legend>
+
+        Address:
+        <br>
+
+        <textarea rows="5" cols="40"
+            placeholder="Enter Address">
+        </textarea>
+
+        <br><br>
+
+        About Yourself:
+        <br>
+
+        <textarea rows="5" cols="40">
+        </textarea>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Progress</legend>
+
+        HTML Learning:
+        <progress value="70" max="100"></progress>
+
+        <br><br>
+
+        Profile Strength:
+        <meter value="80" min="0" max="100"></meter>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Output Example</legend>
+
+        Number 1:
+        <input type="number" id="a" value="10">
+
+        <br><br>
+
+        Number 2:
+        <input type="number" id="b" value="20">
+
+        <br><br>
+
+        Result:
+        <output>30</output>
+
+    </fieldset>
+
+    <br>
+
+    <button type="submit">
+        Submit Form
+    </button>
+
+    <button type="reset">
+        Reset Form
+    </button>
+
+    <input type="submit" value="Submit Using Input">
+
+    <input type="reset" value="Reset Using Input">
+
+</form>
+
+</body>
+</html>
